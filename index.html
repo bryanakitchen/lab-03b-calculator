@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png"/>
+        </div>
+    </header>
+
+    <main>
+       <section class="main-section">
+        <img class="main-logo" src="assets/alchemy-logo.png"/>
+        <h2>
+            Welcome to the Calculator!
+        </h2>
+
+        <content>
+
+       </section>
+        <section class="main-section">
+
+            <input type="number" id="sum-input-1" />
+            <span> + </span>
+            <input type="number" id="sum-input-2" />
+            <span> = </span>
+            <button id="sum-button"> Add Me Up! </button>
+            <span id="sum-span" class="test-answer">  </span>
+        </section>
+
+        <section class="main-section">
+            
+            <input type="number" id="sub-input-1" />
+            <span> - </span>
+            <input type="number" id="sub-input-2" />
+            <span> = </span>
+            <button id="sub-button"> Take it away! </button>
+            <span id="sub-span" class="test-answer">  </span>
+        </section>
+
+        <section class="main-section">
+            
+            <input type="number" id="mult-input-1" />
+            <span> x </span>
+            <input type="number" id="mult-input-2" />
+            <span> = </span>
+            <button id="mult-button"> Build me up! </button>
+            <span id="mult-span" class="test-answer">  </span>
+
+        </section>
+
+        <section class="main-section">
+
+            <input type="number" id="div-input-1" />
+            <span> ÷ </span>
+            <input type="number" id="div-input-2" />
+            <span> = </span>
+            <button id="div-button"> Break me down! </button>
+            <span id="div-span" class="test-answer">  </span>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
