@@ -1,22 +1,14 @@
-// import functions and grab DOM elements
-const sumInput1 = document.getElementById('sum-input-1');
-const sumInput2 = document.getElementById('sum-input-2');
+
+import { handleSumClick, handleMultiplyClick } from './handlers.js';
+
 const sumButton = document.getElementById('sum-button');
-const sumSpan = document.getElementById('sum-span');
+const multiplyButton = document.getElementById('multiply-button');
 
-// initialize state
+sumButton.addEventListener('click', handleSumClick);
+multiplyButton.addEventListener('click', handleMultiplyClick);
 
-// set event listeners to update state and DOM
-
-sumButton.addEventListener('click', () => {
-    const value1 = sumInput1.valueAsNumber; 
-    const value2 = sumInput2.valueAsNumber;
-    const sum = value1 + value2;
-
-    console.log(sum);
-
-    sumSpan.textContent = sum;
-});
+// import functions and grab DOM elements
+// ADDITION - moved to handlers.js
 
 // SUBTRACTION
 const subInput1 = document.getElementById('sub-input-1');
@@ -35,21 +27,7 @@ subButton.addEventListener('click', () => {
     subSpan.textContent = sub;
 });
 
-// MULTIPLICATION
-const multInput1 = document.getElementById('mult-input-1');
-const multInput2 = document.getElementById('mult-input-2');
-const multButton = document.getElementById('mult-button');
-const multSpan = document.getElementById('mult-span');
-
-multButton.addEventListener('click', () => {
-    const value1 = multInput1.valueAsNumber; 
-    const value2 = multInput2.valueAsNumber;
-    const mult = value1 * value2;
-
-    console.log(mult);
-
-    multSpan.textContent = mult;
-});
+// MULTIPLICATION - moved to handlers.js
 
 // DIVISION
 
